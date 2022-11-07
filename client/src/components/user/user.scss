@@ -1,0 +1,107 @@
+.userPage {
+    display: flex;
+    flex-direction: column;
+    height: 140px;
+
+    .pictures {
+        position: relative;
+
+        .banner {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .profilePic {
+            height: 130px;
+            width: 130px;
+            border-radius: 50%;
+            position: absolute;
+            z-index: 4;
+            left: 30px;
+            top: 150px;
+        }
+    }
+
+    .buttons {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        padding: 10px 0px;
+        gap: 15px;
+
+        .IconContainer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 30px;
+            height: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.308);
+            border-radius: 50%;
+            color: white;
+        }
+
+        button {
+            width: 80px;
+            border-radius: 15px;
+            border: none;
+            height: 35px;
+            font-weight: 600;
+            font-size: 15px;
+            margin-right: 40px;
+        }
+    }
+
+    .userInfo {
+        padding: 15px;
+
+        h1 {
+            font-size: 20px;
+            color: #F7F9F9;
+        }
+
+        h2 {
+            font-size: 15px;
+            color: #8B98A5;
+        }
+
+        p {
+            color: #F7F9F9;
+        }
+
+        .desc {
+            padding: 15px 0px 15px 0px;
+        }
+
+        .follows {
+            display: flex;
+
+
+            span {
+                color: #F7F9F9;
+
+            }
+
+            p {
+                color: #8B98A5;
+                padding-right: 15px;
+            }
+        }
+
+        .data {
+            display: flex;
+            flex-wrap: wrap;
+            color: #8B98A5;
+            gap: 15px;
+            padding-bottom: 10px;
+
+            .item {
+                display: flex;
+
+                .p {
+                    color: #8B98A5;
+                }
+            }
+        }
+    }
+}

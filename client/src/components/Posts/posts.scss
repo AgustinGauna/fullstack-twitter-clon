@@ -1,0 +1,174 @@
+.posts {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .post {
+        display: flex;
+        flex-direction: column;
+        background-color: #15202B;
+        height: auto;
+
+        .contentContainer {
+            display: flex;
+            padding: 0 15px;
+
+            .userImg {
+                padding-top: 10px;
+                padding-right: 10px;
+
+                img {
+                    height: 45px;
+                    width: 45px;
+                    border-radius: 50%;
+                }
+            }
+
+            .content {
+                padding-top: 10px;
+
+                .user {
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+                    color: #F7F9F9;
+                    font-weight: bold;
+
+                    .hashtag {
+                        color: #8B98A5;
+                    }
+                }
+
+                p {
+                    color: #F7F9F9;
+                    padding: 2px 0;
+                    overflow: hidden;
+                    word-wrap: break-word;
+                }
+
+                .imgContainer {
+                    display: flex;
+                    justify-content: center;
+
+                    img {
+                        padding: 10px 0px;
+                        max-width: 100%;
+                        height: auto;
+                        border-radius: 15px;
+                    }
+                }
+
+                .interactions {
+                    display: flex;
+                    width: 85%;
+                    justify-content: space-between;
+
+
+
+
+                    .item {
+                        display: flex;
+                        align-items: center;
+                        color: #8B98A5;
+
+
+                        .background {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            border-radius: 50%;
+                            width: 35px;
+                            height: 35px;
+
+
+                            @keyframes comment {
+                                from {
+                                    background-color: #1b2835;
+                                }
+
+                                to {
+                                    background-color: rgba(50, 50, 139, 0.2);
+                                }
+                            }
+
+                            &:hover {
+                                animation-name: comment;
+                                animation-duration: 0.3s;
+                                animation-fill-mode: forwards;
+
+
+                            }
+                        }
+
+                        p {
+                            font-size: 14px;
+                            color: #8B98A5;
+                            font-weight: bold;
+                            padding-left: 7px;
+                        }
+
+                        &:hover {
+                            p {
+                                color: rgba(50, 50, 139, 1);
+                            }
+                        }
+
+                    }
+                }
+
+            }
+
+
+        }
+
+
+
+    }
+
+    @keyframes in {
+        from {
+            background-color: #15202B;
+
+        }
+
+        to {
+            background-color: #1b2835;
+
+        }
+    }
+
+    @keyframes out {
+        from {
+            background-color: #1b2835;
+
+        }
+
+        to {
+            background-color: #15202B;
+        }
+    }
+
+    .animationIn {
+
+        cursor: pointer;
+        animation-name: in;
+        animation-duration: 0.3s;
+        animation-fill-mode: forwards;
+
+    }
+
+    .animationOut {
+        cursor: pointer;
+        animation-name: out;
+        animation-duration: 0.3s;
+        animation-fill-mode: forwards;
+    }
+
+
+    hr {
+        border: none;
+        height: 1px;
+        background-color: rgba(211, 211, 211, 0.2);
+        width: 100%;
+    }
+}

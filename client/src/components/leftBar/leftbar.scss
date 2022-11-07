@@ -1,0 +1,132 @@
+.leftBar {
+    display: flex;
+    justify-content: end;
+    flex: 3.2;
+    background-color: red;
+    background-color: #15202B;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    -webkit-user-select: none;
+    /* Safari */
+    -ms-user-select: none;
+    /* IE 10 and IE 11 */
+    user-select: none;
+    /* Standard syntax */
+
+    .menu {
+        color: white;
+        padding: 0px 40px;
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+        justify-content: space-between;
+
+        .top {
+
+            .item {
+                height: 50px;
+                color: white;
+                font-size: 21px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 5px 20px 5px 10px;
+                gap: 15px;
+                width: fit-content;
+                border-radius: 50px;
+
+
+            }
+
+            .twitterIcon {
+                border-radius: 50%;
+                padding: 2px 10px 2px 10px;
+            }
+
+            @keyframes in {
+                from {
+                    background-color: #15202B;
+
+                }
+
+                to {
+                    background-color: #1b2835;
+
+                }
+            }
+
+            @keyframes out {
+                from {
+                    background-color: #1b2835;
+
+                }
+
+                to {
+                    background-color: #15202B;
+                }
+            }
+
+            .animationIn {
+
+                cursor: pointer;
+                animation-name: in;
+                animation-duration: 0.3s;
+                animation-fill-mode: forwards;
+
+            }
+
+            .animationOut {
+                cursor: pointer;
+                animation-name: out;
+                animation-duration: 0.3s;
+                animation-fill-mode: forwards;
+            }
+        }
+
+        .user {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 25px;
+            border-radius: 35px;
+            height: 20px;
+            cursor: pointer;
+            margin-bottom: 10px;
+
+
+            .userInfo {
+                h2 {
+                    font-size: 15px;
+                }
+
+                p {
+                    font-size: 15px;
+                    color: #8B98A5;
+                }
+            }
+
+
+            img {
+                height: 40px;
+                width: 40px;
+                border-radius: 50%;
+            }
+
+            .moreContainer {
+                width: 70px;
+                display: flex;
+                justify-content: end;
+
+
+            }
+
+            &:hover {
+                animation-name: in;
+                animation-duration: 0.3s;
+                animation-fill-mode: forwards;
+            }
+        }
+    }
+}
